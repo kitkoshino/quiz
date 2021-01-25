@@ -16,27 +16,35 @@ export const QuizContainer = styled.div`
   }
 `;
 
+const BlackFilter = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+`;
+
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <Widget>
-          <Widget.Header>
-            <h1>Friends</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>Quem sabe mais</p>
-          </Widget.Content>
-        </Widget>
-        <Widget>
-          <Widget.Content>
-            <h1>Friends</h1>
-            <p>Quem sabe mais</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/kitkoshino" />
+      <BlackFilter>
+        <QuizContainer>
+          <Widget>
+            <Widget.Header>
+              <h1>Friends</h1>
+            </Widget.Header>
+            <Widget.Content>
+              <p>Quem sabe mais</p>
+            </Widget.Content>
+          </Widget>
+          <Widget>
+            <Widget.Content>
+              <h1>Friends</h1>
+              <p>Quem sabe mais</p>
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GitHubCorner projectUrl="https://github.com/kitkoshino" />
+      </BlackFilter>
     </QuizBackground>
   );
 }
