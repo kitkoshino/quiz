@@ -3,7 +3,7 @@ import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import QuizBackground from '../src/components/QuizBackground';
-import GitHubCorner from '../src/components/GitHubCorner';
+import GitHubCorner from '../src/components/GithubCorner';
 
 export const QuizContainer = styled.div`
   width: 100%;
