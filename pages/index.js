@@ -1,9 +1,11 @@
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 import db from '../db.json';
-import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
-import QuizBackground from '../src/components/QuizBackground';
 import GitHubCorner from '../src/components/GithubCorner';
+import QuizBackground from '../src/components/QuizBackground';
+import Widget from '../src/components/Widget';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -22,7 +24,18 @@ const BlackFilter = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
+// const handleSubmit = (event) => {
+
+//   event.preventDefault();
+//   const name = 'Kit';
+//   router.push(`/quiz?name=${name}`);
+//   console.log('click');
+// };
+
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <BlackFilter>
@@ -32,7 +45,18 @@ export default function Home() {
               <h1>Friends</h1>
             </Widget.Header>
             <Widget.Content>
-              <p>Quem sabe mais</p>
+              <form
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  router.push(`/quiz?name=${name}`);
+                  console.log('click');
+                }}
+              >
+                <input placeholder="Digite seu nome" onChange={(event) => {
+                  setName(event.target.value);
+                }}/>
+                <button type="submit">Jogar</button>
+              </form>
             </Widget.Content>
           </Widget>
           <Widget>
