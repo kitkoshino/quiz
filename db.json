@@ -4,7 +4,7 @@
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "image": "https://imagens.brasil.elpais.com/resizer/pz0WHfyy8g2LUsX5Gc9ujGIF1-w=/768x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/J77VKOA45CVSSO6O2Q4UY5EZ7Y.jpg",
       "title": "Como fazer um seletor por id via CSS?",
       "description": "Essa é pra aquecer",
       "answer": 2,
@@ -16,13 +16,15 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "image": "https://cdn.ome.lt/LnAlDRJBnjT14vaHTLIUoLtVjg0=/570x0/smart/uploads/conteudo/fotos/friends_the_last_one.jpg",
       "title": "Como fazer um background gradiente com css?",
       "description": "Faz tempo em haha",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "alternativa1",
+         "alternativa2",
+         "alternativa3",
+         "alternativa4"
       ]
     }
   ],
