@@ -8,7 +8,6 @@ import AlternativesForm from '../../src/components/AlternativesForm';
 import Button from '../../src/components/Button';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
 
-
 const BlackFilter = styled.div`
   width: 100%;
   height: 100vh;
@@ -18,14 +17,14 @@ const BlackFilter = styled.div`
 const ResultWidget = ({ results }) => {
   return (
     <Widget>
-      <Widget.Header>Resultados</Widget.Header>
+      <Widget.Header>
+        <BackLinkArrow href="/" />
+        Resultados
+      </Widget.Header>
 
       <Widget.Content>
         <h3>
-          Você acertou
-          {' '}
-          {results.filter((rightAnswer) => rightAnswer).length}
-          {' '}
+          Você acertou {results.filter((rightAnswer) => rightAnswer).length}{' '}
           perguntas
         </h3>
         <ul>
@@ -66,7 +65,7 @@ const QuestionWidget = ({
   return (
     <Widget>
       <Widget.Header>
-      <BackLinkArrow href="/" />
+        <BackLinkArrow href="/" />
 
         <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
@@ -148,7 +147,7 @@ export default function QuizPage() {
 
   const addResult = (result) => {
     setResults([...results, result]);
-  }
+  };
 
   useEffect(() => {
     setTimeout(() => {
