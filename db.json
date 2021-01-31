@@ -1,7 +1,7 @@
 {
   "bg": "https://wallpapercave.com/wp/wp2001489.jpg",
   "title": "Quiz de Friends para quem ama Friends",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "description": "Alerta: Esse quiz é para quem maratonou Friends mais de 10 vezes!",
   "questions": [
     {
       "image": "https://i.ytimg.com/vi/hdZLAcQED60/maxresdefault.jpg",
@@ -23,14 +23,14 @@
       ]
     },
     {
-      "image": "https://imagens.brasil.elpais.com/resizer/pz0WHfyy8g2LUsX5Gc9ujGIF1-w=/768x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/J77VKOA45CVSSO6O2Q4UY5EZ7Y.jpg",
-      "title": "Quail o nome do filme que Joey foi filmar em Las Vegas?",
+      "image": "https://quiz-friends.vercel.app/question3-img.jpg",
+      "title": "Qual o nome do filme que Joey foi filmar em Las Vegas?",
       "description": "",
       "answer": 3,
       "alternatives": [
-        "",
-        "",
-        "",
+        "Over There",
+        "Mac and Cheese",
+        "Sudsie",
         "Shutterspeed"
       ]
     },
@@ -44,6 +44,54 @@
         "Nevada",
         "Utah",
         "Delaware"
+      ]
+    },
+    {
+      "image": "https://quiz-friends.vercel.app/question5-img.jpg",
+      "title": "Onde fica a casa que Monica e Chandler compram?",
+      "description": "They are growing up!",
+      "answer": 1,
+      "alternatives": [
+        "Chester",
+        "Westchester",
+        "White Plans",
+        "Wyoming"
+      ]
+    },
+    {
+      "image": "https://quiz-friends.vercel.app/question6-img.jpg",
+      "title": "Qual o nome do noivo da Ursula que Phoebe conhece na festa de Halloween?",
+      "description": "He sweets a lot!",
+      "answer": 0,
+      "alternatives": [
+        "Eric",
+        "Gary",
+        "John",
+        "Ryan"
+      ]
+    },
+    {
+      "image": "https://quiz-friends.vercel.app/question7-img.jpg",
+      "title": "De onde é o melhor cheesecake que a Rachel e o Chandler já comeram?",
+      "description": "He didn't read the box before, he opens the box and you can't return the box after you open the box!",
+      "answer": 3,
+      "alternatives": [
+        "Chesecake Mama's Bakery",
+        "Chicago's Little Bakery",
+        "Cheesecake Factory",
+        "Mama's Little Bakery"
+      ]
+    },
+    {
+      "image": "https://quiz-friends.vercel.app/question8-img.jpg",
+      "title": "De onde é o melhor cheesecake que a Rachel e o Chandler já comeram?",
+      "description": "He didn't read the box before, he opens the box and you can't return the box after you open the box!",
+      "answer": 3,
+      "alternatives": [
+        "Chesecake Mama's Bakery",
+        "Chicago's Little Bakery",
+        "Cheesecake Factory",
+        "Mama's Little Bakery"
       ]
     }
   ],
