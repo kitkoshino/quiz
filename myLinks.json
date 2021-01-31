@@ -1,0 +1,14 @@
+{
+  "externalLinks": [
+    {
+      "name": "Linkedin",
+      "image": "./assets/linkedin.svg",
+      "link": "https://github.com/kitkoshino"
+    },
+    {
+      "name": "Github",
+      "image": "./assets/github.svg",
+      "link": "https://www.linkedin.com/in/cristiane-koshino/"
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
+//import db from '../../../db.json';
+import Widget from '../../components/Widget';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../components/QuizContainer';
+import AlternativesForm from '../../components/AlternativesForm';
+import Button from '../../components/Button';
+import BackLinkArrow from '../../components/BackLinkArrow';
 
 const BlackFilter = styled.div`
   width: 100%;
@@ -16,7 +17,9 @@ const BlackFilter = styled.div`
 const ResultWidget = ({ results }) => {
   return (
     <Widget>
-      <Widget.Header>Resultados</Widget.Header>
+      <Widget.Header>
+        <BackLinkArrow href="/" />
+        Resultados</Widget.Header>
 
       <Widget.Content>
         <h3>
@@ -64,6 +67,8 @@ const QuestionWidget = ({
   return (
     <Widget>
       <Widget.Header>
+      <BackLinkArrow href="/" />
+
         <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
 
@@ -134,13 +139,13 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT'
 };
-export default function QuizPage() {
+export default function QuizScreen({externalQuestions, externalBg}) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
-  const totalQuestions = db.questions.length;
+  const totalQuestions = externalQuestions.length;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
 
   const addResult = (result) => {
     setResults([...results, result]);
@@ -162,7 +167,7 @@ export default function QuizPage() {
   };
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={externalBg}>
       <BlackFilter>
         <QuizContainer>
           {screenState === screenStates.QUIZ && (
