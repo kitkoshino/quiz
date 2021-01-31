@@ -84,14 +84,38 @@
     },
     {
       "image": "https://quiz-friends.vercel.app/question8-img.jpg",
-      "title": "De onde é o melhor cheesecake que a Rachel e o Chandler já comeram?",
-      "description": "He didn't read the box before, he opens the box and you can't return the box after you open the box!",
-      "answer": 3,
+      "title": "Monica compra um produto de depilação que promete não doer, qual o nome do produto?",
+      "description": "'WE WERE ON A BREAK!'",
+      "answer": 2,
       "alternatives": [
-        "Chesecake Mama's Bakery",
-        "Chicago's Little Bakery",
-        "Cheesecake Factory",
-        "Mama's Little Bakery"
+        "Waxette",
+        "Wax it",
+        "Waxine",
+        "No pain Wax"
+      ]
+    },
+    {
+      "image": "https://quiz-friends.vercel.app/question9-img.jpg",
+      "title": "Chandler fica com uma das 7 irmãs de Joey na festa de aniversário do mesmo, ele não se lembra qual o nome dela, e você lembra?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Gina",
+        "Mary Angela",
+        "Veronica",
+        "Mary Therese"
+      ]
+    },
+    {
+      "image": "https://quiz-friends.vercel.app/question10-img.jpg",
+      "title": "Pete Becker inventou qual produto que o deixou multimilionário?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "MOSS 865",
+        "MOSS 365",
+        "BECKER 100",
+        "BECKER 965"
       ]
     }
   ],
