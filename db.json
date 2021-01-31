@@ -1,25 +1,49 @@
 {
   "bg": "https://wallpapercave.com/wp/wp2001489.jpg",
-  "title": "Quiz CSS da Alura",
+  "title": "Quiz de Friends para quem ama Friends",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
-      "image": "https://imagens.brasil.elpais.com/resizer/pz0WHfyy8g2LUsX5Gc9ujGIF1-w=/768x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/J77VKOA45CVSSO6O2Q4UY5EZ7Y.jpg",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://i.ytimg.com/vi/hdZLAcQED60/maxresdefault.jpg",
+      "title": "Qual o nome dos pais da Emily?",
+      "description": "",
       "answer": 2,
-      "alternatives": [".elemento", "*elemento", "#elemento", "%elemento"]
+      "alternatives": ["Jack e Judy", "John e Andrea", "Steven e Andrea", "Steve e Sarah"]
     },
     {
-      "image": "https://cdn.ome.lt/LnAlDRJBnjT14vaHTLIUoLtVjg0=/570x0/smart/uploads/conteudo/fotos/friends_the_last_one.jpg",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://imagens.brasil.elpais.com/resizer/pz0WHfyy8g2LUsX5Gc9ujGIF1-w=/768x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/J77VKOA45CVSSO6O2Q4UY5EZ7Y.jpg",
+      "title": "Quais eram os 5 itens na sacola da Rachel naquele episódio do quiz?",
+      "description": "",
       "answer": 0,
       "alternatives": [
-        "alternativa1",
-        "alternativa2",
-        "alternativa3",
-        "alternativa4"
+        "Apples, Tortilla chips, Yogurt, Diet soda, Scotch tape (Maçãs,tortillas, iogurte, refri diet, fita adesiva)",
+        "Apples, Tortilla chips, Diet soda, Orange Juice, Tampons (Maçãs,tortillas, refri diet, suco de laranja, absorvente)",
+        "Half box of cookies, Orange Juice, apples, tortilla chips, Diet Soda (Meia caixa de cookies,suco de laranja, maçãs, tortillas, refri diet)",
+        "Half box of cookies, Yogurt, Tampons, Orange juice, Scotch tape (Meia caixa de cookies, iogurte, absorvente, suco de laranja, fita adesiva)"
+      ]
+    },
+    {
+      "image": "https://imagens.brasil.elpais.com/resizer/pz0WHfyy8g2LUsX5Gc9ujGIF1-w=/768x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/J77VKOA45CVSSO6O2Q4UY5EZ7Y.jpg",
+      "title": "Quail o nome do filme que Joey foi filmar em Las Vegas?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "",
+        "",
+        "",
+        "Shutterspeed"
+      ]
+    },
+    {
+      "image": "https://quiz-git-main.kitkoshino.vercel.app/question4-img.jpg",
+      "title": "Ross escreve duas vezes o nome de um estado no jogo do Chandler durante o o dia de Ação de Graças, qual era esse estado?",
+      "description": "And he knew it.",
+      "answer": 1,
+      "alternatives": [
+        "Ohio",
+        "Nevada",
+        "Utah",
+        "Delaware"
       ]
     }
   ],
