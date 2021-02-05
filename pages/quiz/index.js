@@ -27,14 +27,14 @@ const ResultWidget = ({ results }) => {
           Você acertou {results.filter((rightAnswer) => rightAnswer).length}{' '}
           perguntas
         </h3>
-        <ul>
+        {/* <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
               #{index + 1} Resultado:
               {result === true ? 'Acertou' : 'Errou'}
             </li>
           ))}
-        </ul>
+        </ul> */}
       </Widget.Content>
     </Widget>
   );
@@ -69,12 +69,11 @@ const QuestionWidget = ({
 
         <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
-
       <img
         alt="Descrição"
         style={{
           width: '100%',
-          height: '150px',
+          height: '250px',
           objectFit: 'cover'
         }}
         src={question.image}

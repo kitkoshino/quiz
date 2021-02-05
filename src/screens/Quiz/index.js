@@ -10,7 +10,7 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 
 const BlackFilter = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
@@ -76,7 +76,7 @@ const QuestionWidget = ({
         alt="Descrição"
         style={{
           width: '100%',
-          height: '150px',
+          height: '100px',
           objectFit: 'cover'
         }}
         src={question.image}

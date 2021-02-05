@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const QuizBackground = styled.div`
   width: 100%;
-  background-size: 110%;
   background-position: 40% 100%;
   background-image: url(${({ backgroundImage }) => backgroundImage});
   background-color: ${({ theme }) => theme.colors.mainBg};
   background-repeat: no-repeat;
+  background-size: cover;
   flex: 1;
   @media screen and (max-width: 500px) {
     background-image: none;
@@ -21,7 +21,7 @@ const QuizBackground = styled.div`
         url(${({ backgroundImage }) => backgroundImage});
       display: block;
       width: 100%;
-      height: 210px;
+      height: 120%;
       position: absolute;
       top: 0;
       left: 0;

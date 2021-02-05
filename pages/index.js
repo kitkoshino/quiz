@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 
 const BlackFilter = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.5);
 `;
 

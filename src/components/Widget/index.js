@@ -33,7 +33,6 @@ Widget.Header = styled.header`
     margin: 0;
   }
 `;
-
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   & > *:first-child {
