@@ -10,8 +10,24 @@ import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 const BlackFilter = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.5);
+
+  &.result {
+    height: 100vh;
+  }
+`;
+
+const QuizContainerResult = styled.div`
+  width: 100%;
+  height: 100vh;
+  max-width: 600px;
+  padding-top: 5px;
+  margin: auto 10%;
+  @media screen and (max-width: 500px) {
+    margin: auto;
+    padding: 15px;
+  }
 `;
 
 const ResultWidget = ({ results }) => {
@@ -177,10 +193,16 @@ export default function QuizPage() {
             />
           )}
 
-          {screenState === screenStates.LOADING && <LoadingWidget />}
+          {screenState === screenStates.LOADING && (
+            <QuizContainerResult>
+              <LoadingWidget />
+            </QuizContainerResult>
+          )}
 
           {screenState === screenStates.RESULT && (
-            <ResultWidget results={results} />
+            <QuizContainerResult>
+              <ResultWidget results={results} />
+            </QuizContainerResult>
           )}
         </QuizContainer>
       </BlackFilter>
