@@ -19,6 +19,18 @@ const BlackFilter = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
+
+const QuizContainerHome = styled.div`
+  width: 100%;
+  max-width: 400px;
+  padding-top: 5px;
+  margin: auto 10%;
+  @media screen and (max-width: 500px) {
+    margin: auto;
+    padding: 15px;
+  }
+`;
+
 // const handleSubmit = (event) => {
 
 //   event.preventDefault();
@@ -34,7 +46,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <BlackFilter>
-        <QuizContainer>
+        <QuizContainerHome>
           <Widget
             as={motion.section}
             transition={{delay: 0, duration: 0.5}}
@@ -99,7 +111,7 @@ export default function Home() {
             </Widget.Content>
           </Widget>
           <Footer />
-        </QuizContainer>
+        </QuizContainerHome>
         <GitHubCorner projectUrl="https://github.com/kitkoshino" />
       </BlackFilter>
     </QuizBackground>
