@@ -9,7 +9,7 @@ const QuizBackground = styled.div`
   background-size: cover;
   flex: 1;
   @media screen and (max-width: 500px) {
-    background-image: none;
+    background-image: ${({ theme }) => theme.colors.mainBg};
     &:after {
       content: '';
       background-size: cover;
@@ -21,7 +21,7 @@ const QuizBackground = styled.div`
         url(${({ backgroundImage }) => backgroundImage});
       display: block;
       width: 100%;
-      height: 120%;
+      height: ${(props) => props.height};
       position: absolute;
       top: 0;
       left: 0;
