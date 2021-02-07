@@ -139,8 +139,8 @@ const QuestionWidget = ({
             Confirmar
           </Button>
 
-          {isCorrect && isQuestionSubmitted && <p>Você Acertou! :) </p>}
-          {!isCorrect && isQuestionSubmitted && <p>Você Errou... :( </p>}
+          {/* {isCorrect && isQuestionSubmitted && <p>Você Acertou! :) </p>}
+          {!isCorrect && isQuestionSubmitted && <p>Você Errou... :( </p>} */}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
